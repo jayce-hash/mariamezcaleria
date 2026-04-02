@@ -65,6 +65,7 @@
     object-fit: cover;
     image-rendering: crisp-edges;
     filter: contrast(1.1);
+    mix-blend-mode: multiply; /* Blends the logo background into the nav */
   }
 
   /* Hamburger Menu Icon */
@@ -605,12 +606,6 @@
     border-right: none;
   }
 
-  .feature-icon {
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-    display: block;
-  }
-
   .feature-title {
     font-family: 'Playfair Display', serif;
     font-size: 1.4rem;
@@ -996,11 +991,7 @@
     gap: 0.5rem;
   }
 
-  .gallery-placeholder span:first-child {
-    font-size: 2.5rem;
-  }
-
-  .gallery-placeholder span:last-child {
+  .gallery-placeholder span {
     font-size: 0.8rem;
     letter-spacing: 0.15em;
     text-transform: uppercase;
@@ -1160,17 +1151,14 @@
 
 <section class="features">
   <div class="feature-item reveal">
-    <span class="feature-icon">🌵</span>
     <h3 class="feature-title">Authentic Mezcal Bar</h3>
     <p class="feature-desc">Explore Mezcal Industrial, Artesanal, and Ancestral — each category with its own distinct character and production story.</p>
   </div>
   <div class="feature-item reveal">
-    <span class="feature-icon">🌮</span>
     <h3 class="feature-title">House Specialties</h3>
     <p class="feature-desc">From Chuleta Tomahawk with red pumpkin seed pipian to Cochinita Pibil slow-roasted in citrus and achiote — food that tells a story.</p>
   </div>
   <div class="feature-item reveal">
-    <span class="feature-icon">🎭</span>
     <h3 class="feature-title">Historic Setting</h3>
     <p class="feature-desc">Located inside the iconic Waco Hippodrome Theatre on Austin Ave — indoor and outdoor seating in a stunning historic venue.</p>
   </div>
@@ -1430,22 +1418,22 @@
   <div class="gallery-grid">
     <div class="gallery-item">
       <img src="IMG3.jpeg" alt="Maria Mezcaleria" onerror="this.parentElement.querySelector('.gallery-placeholder').style.display='flex'">
-      <div class="gallery-placeholder" style="display:none;"><span>&#127790;</span><span>IMG3.jpeg</span></div>
+      <div class="gallery-placeholder" style="display:none;"><span>IMG3.jpeg</span></div>
       <div class="gallery-item-overlay"><span class="gallery-overlay-text">La Cocina</span></div>
     </div>
     <div class="gallery-item">
       <img src="IMG4.jpeg" alt="Maria Mezcaleria" onerror="this.parentElement.querySelector('.gallery-placeholder').style.display='flex'">
-      <div class="gallery-placeholder" style="display:none;"><span>&#128025;</span><span>IMG4.jpeg</span></div>
+      <div class="gallery-placeholder" style="display:none;"><span>IMG4.jpeg</span></div>
       <div class="gallery-item-overlay"><span class="gallery-overlay-text">Sabores</span></div>
     </div>
     <div class="gallery-item">
       <img src="IMG5.jpeg" alt="Maria Mezcaleria" onerror="this.parentElement.querySelector('.gallery-placeholder').style.display='flex'">
-      <div class="gallery-placeholder" style="display:none;"><span>&#129347;</span><span>IMG5.jpeg</span></div>
+      <div class="gallery-placeholder" style="display:none;"><span>IMG5.jpeg</span></div>
       <div class="gallery-item-overlay"><span class="gallery-overlay-text">Mezcal Bar</span></div>
     </div>
     <div class="gallery-item">
       <img src="IMG6.jpeg" alt="Maria Mezcaleria" onerror="this.parentElement.querySelector('.gallery-placeholder').style.display='flex'">
-      <div class="gallery-placeholder" style="display:none;"><span>&#128293;</span><span>IMG6.jpeg</span></div>
+      <div class="gallery-placeholder" style="display:none;"><span>IMG6.jpeg</span></div>
       <div class="gallery-item-overlay"><span class="gallery-overlay-text">Ambiente</span></div>
     </div>
   </div>
